@@ -27,17 +27,13 @@ Para replicar este análisis, sigue los siguientes pasos:
 
 1.  **Clonar el Repositorio:**
     ```bash
-    git clone [https://github.com/tu-usuario/nombre-de-tu-repositorio.git](https://github.com/tu-usuario/nombre-de-tu-repositorio.git)
-    cd nombre-de-tu-repositorio
+    git clone https://github.com/munsterinc1/nyc-taxi-tip-classifier
+    cd nyc-taxi-tip-classifier
     ```
 
 2.  **Crear y Activar un Entorno Virtual (Recomendado):**
     ```bash
     python -m venv venv
-    # En Linux/macOS
-    source venv/bin/activate
-    # En Windows
-    .\venv\Scripts\activate
     ```
 
 3.  **Instalar Dependencias:**
