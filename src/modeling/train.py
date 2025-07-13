@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 import joblib
 import os
-
+'''
 # Importar funciones y constantes de nuestros módulos
 from src.data.dataset import load_and_prepare_data
 from src.features.build_features import create_and_select_features
@@ -13,12 +13,21 @@ from src.config import (
     target_col,
     MODEL_OUTPUT_PATH
 )
+'''
+from src.data.dataset import load_and_prepare_data
+from src.features.build_features import create_and_select_features
+from src.config import (
+    features,
+    target_col,
+    MODEL_OUTPUT_PATH,
+    MONTH_DATA_URLS # <--- Ahora importamos el diccionario completo
+)
 
 if __name__ == "__main__":
     print("Cargando y preprocesando datos de entrenamiento (Enero 2020)...")
     
     # Cargar y preparar datos
-    taxi_initial = load_and_prepare_data(JAN_2020_DATA_URL)
+    taxi_initial = load_and_prepare_data(MONTH_DATA_URLS["Enero 2020"])
 
     # Crear y seleccionar características
     taxi_train = create_and_select_features(taxi_initial)
